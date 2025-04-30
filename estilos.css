@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('fondojuego.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  background-color: #a6beff65;
+  padding: 30px 40px;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 95%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #e5ff00;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#attempts {
+  font-size: 1rem;
+  color: #e5ff00;
+}
+
+#description {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  border: 2px solid #3b4dec;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #3b4dec;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #fdffda, #e5ff00);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #e5ff00;
+  transform: scale(1.05);
+}
+
+#figure-img {
+  display: block;              
+  margin: 20px auto;           
+  max-width: 150px;           
+  transition: transform 0.3s ease;
+}
+
+#figure-img:hover {
+  transform: scale(1.1);
+}
+
+.result {
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+#game-over-buttons button {
+  background-color: #e5ff00;
+}
+
+#game-over-buttons button:hover {
+  background-color: #e5ff00;
+}

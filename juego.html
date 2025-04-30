@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Qué figura soy?</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>¿Qué figura soy?</h1>
+    
+    <div id="attempts" style="position: absolute; top: 10px; right: 10px; font-weight: bold; color: red;">
+      Intentos restantes: 5
+    </div>
+    
+    <img id="figure-img" src="" alt="Figura" width="100" style="display: none;" />
+
+    <p id="description">Cargando descripción...</p>
+
+    <input type="text" id="answer" placeholder="Escribe tu respuesta aquí...">
+    <br>
+    
+    <div style="margin-top: 10px;">
+      <button id="comprobarBtn">Comprobar</button>
+      <button id="salirBtn">Salir</button>
+    </div>
+
+    <div id="game-over-buttons" style="display: none; margin-top: 10px;">
+      <button id="restartBtn">Volver a empezar</button>
+    </div>
+
+    <p id="result"></p>
+
+    <audio id="seleccion-sound" src="seleccion.mp3"></audio>
+    <audio id="eleccionfig-sound" src="eleccionfig.mp3"></audio>
+    <audio id="colorear-sound" src="colorear.mp3"></audio>
+  </div>
+
+  <script src="juego.js"></script>
+</body>
+</html>

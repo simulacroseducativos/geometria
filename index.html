@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bienvenido - ¿Qué figura soy?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="welcome-container">
+    <h1>Bienvenido al juego de geometria</h1>
+    <p class="game-description">
+      "¿Qué figura soy?"<br>
+      En este juego pondrás a prueba tu conocimiento sobre las figuras geométricas. <br>
+      Lee la descripción de cada figura, escribe tu respuesta y descubre si acertaste.<br>
+      ¡Tienes 6 oportunidades para demostrar cuánto sabes!
+    </p>
+
+    <button id="start-button" class="start-button">Empezar</button>
+
+    <audio id="start-sound" src="sonido.mp3"></audio>
+  </div>
+
+  <script>
+    document.getElementById("start-button").addEventListener("click", function() {
+      const startSound = document.getElementById("start-sound");
+      
+      startSound.play();
+
+      startSound.onended = function() {
+        window.location.href = "juego.html";
+      };
+    });
+  </script>
+</body>
+</html>
